@@ -2,7 +2,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/Xamarin.Stripe.Terminal.Android.svg)](https://www.nuget.org/packages/Xamarin.Stripe.Terminal.Android/)
 
-The official [Stripe][stripe] Terminal Android SDK Bindings for Xamarin.Android
+[Stripe][stripe] Terminal Android SDK Bindings for Xamarin.Android
 
 ## Installation
 
