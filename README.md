@@ -2,7 +2,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/Xamarin.Stripe.Terminal.Android.svg)](https://www.nuget.org/packages/Xamarin.Stripe.Terminal.Android/)
 
-The official [Stripe][stripe] Terminal Android SDK Bindings for Xamarin.Android
+[Stripe][stripe] Terminal Android SDK Bindings for Xamarin.Android
 
 ## Installation
 
@@ -42,8 +42,8 @@ For any requests, bug or comments, please [open an issue][issues] or [submit a
 pull request][pulls].
 
 [dotnet-core-cli-tools]: https://docs.microsoft.com/en-us/dotnet/core/tools/
-[issues]: https://github.com/Square-Six/Xamarin.Stripe.Terminal/issues/new
+[issues]: https://github.com/Square-Six/Xamarin.Stripe.Terminal.Android/issues/new
 [nuget-cli]: https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference
 [package-manager-console]: https://docs.microsoft.com/en-us/nuget/tools/package-manager-console
-[pulls]: https://github.com/Square-Six/Xamarin.Stripe.Terminal/pulls
+[pulls]: https://github.com/Square-Six/Xamarin.Stripe.Terminal.Android/pulls
 [stripe]: https://stripe.com
