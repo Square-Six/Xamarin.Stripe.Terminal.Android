@@ -2,9 +2,9 @@
 <package >
   <metadata>
     <id>Xamarin.Stripe.Terminal.Android</id>
-    <version>1.0.8</version>
+    <version>1.0.15</version>
     <title>Xamarin StripeTerminal Android</title>
-    <authors>Jamie Smith</authors>
+    <authors>Jamie Smith, Chris Oswald, Blake Davidson</authors>
     <owners>SquareSix</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
