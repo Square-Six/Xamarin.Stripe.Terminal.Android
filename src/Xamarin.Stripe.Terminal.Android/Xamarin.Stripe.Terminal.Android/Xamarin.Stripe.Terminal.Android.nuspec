@@ -27,6 +27,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Xamarin.Stripe.Terminal.Android.dll" target="lib\MonoAndroid90" />
+    <file src="bin\Release\Xamarin.Stripe.Terminal.Android.dll" target="lib\MonoAndroid90" />
   </files>
 </package>
