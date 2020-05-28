@@ -10,7 +10,6 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/Square-Six/Xamarin.StripeTerminal</projectUrl>
     <description>This is the StripeTerminal SDK bindings for Xamarin.Android</description>
-    <releaseNotes>This is the initial version.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>stripe-terminal android</tags>
     <dependencies>
