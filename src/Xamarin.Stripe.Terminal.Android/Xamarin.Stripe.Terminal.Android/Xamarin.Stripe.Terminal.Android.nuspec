@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Stripe.Terminal.Android</id>
-    <version>1.0.17.1</version>
+    <version>1.0.18</version>
     <title>Xamarin StripeTerminal Android</title>
     <authors>Jamie Smith, Chris Oswald, Blake Davidson</authors>
     <owners>SquareSix</owners>
@@ -10,7 +10,7 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/Square-Six/Xamarin.StripeTerminal</projectUrl>
     <description>This is the StripeTerminal SDK bindings for Xamarin.Android</description>
-    <copyright>Copyright 2020</copyright>
+    <copyright>Copyright 2021</copyright>
     <tags>stripe-terminal android</tags>
     <dependencies>
       <group targetFramework="MonoAndroid90">
