@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xamarin.Stripe.Terminal.Android</id>
-    <version>1.0.18</version>
+    <version>1.0.17.2</version>
     <title>Xamarin StripeTerminal Android</title>
     <authors>Jamie Smith, Chris Oswald, Blake Davidson</authors>
     <owners>SquareSix</owners>
@@ -13,10 +13,10 @@
     <copyright>Copyright 2021</copyright>
     <tags>stripe-terminal android</tags>
     <dependencies>
-      <group targetFramework="MonoAndroid90">
-        <dependency id="Xamarin.Android.Device.Names" version="1.1.8" />
+      <group targetFramework="monoandroid11.0">
         <dependency id="GoogleGson" version="2.8.5" />
         <dependency id="Naxam.Jakewharton.Timber" version="4.7.1" />
+        <dependency id="Xamarin.Android.Device.Names" version="1.1.8" />
         <dependency id="Xamarin.AndroidX.Browser" version="1.0.0" />
         <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0" />
         <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.2.0" />
@@ -26,6 +26,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\Xamarin.Stripe.Terminal.Android.dll" target="lib\MonoAndroid90" />
+    <file src="bin\Release\Xamarin.Stripe.Terminal.Android.dll" target="lib\monoandroid11.0" />
   </files>
 </package>
