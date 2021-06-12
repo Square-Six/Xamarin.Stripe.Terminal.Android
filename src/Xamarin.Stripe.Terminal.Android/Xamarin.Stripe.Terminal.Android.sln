@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Stripe.Terminal.And
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceNames", "DeviceNames\DeviceNames.csproj", "{C49F87E3-B369-4B9D-819C-FFFC2B29038A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guava", "Guava\Guava.csproj", "{3D460B87-ECF9-44AC-9AE2-AFAFA8800B47}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,10 +20,6 @@ Global
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D460B87-ECF9-44AC-9AE2-AFAFA8800B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D460B87-ECF9-44AC-9AE2-AFAFA8800B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D460B87-ECF9-44AC-9AE2-AFAFA8800B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D460B87-ECF9-44AC-9AE2-AFAFA8800B47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
