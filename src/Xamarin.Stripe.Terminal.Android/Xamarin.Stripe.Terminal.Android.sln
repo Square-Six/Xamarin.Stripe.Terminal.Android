@@ -6,6 +6,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Stripe.Terminal.And
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceNames", "DeviceNames\DeviceNames.csproj", "{C49F87E3-B369-4B9D-819C-FFFC2B29038A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Core", "StripeTerminal.Core\StripeTerminal.Core.csproj", "{95608B1B-2DFF-4A44-8815-5106B8026C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Models", "StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj", "{CB87261D-5E6C-4487-BAA3-B3234580470E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.External", "StripeTerminal.External\StripeTerminal.External.csproj", "{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Common", "StripeTerminal.Internal.Common\StripeTerminal.Internal.Common.csproj", "{60D00634-E80F-4FFB-A089-85E6EFCC9330}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +28,22 @@ Global
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

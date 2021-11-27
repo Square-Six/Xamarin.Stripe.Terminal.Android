@@ -22,7 +22,7 @@
     <remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.dagger')]" />
     <remove-node path="/api/package[starts-with(@name, 'org.hamcrest')]" />
 
-    <remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.bbpos')]" />
+    <!--<remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.bbpos')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.api')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.adapter')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.log')]" />
@@ -33,9 +33,9 @@
     <remove-node path="/api/package[@name='com.stripe.stripeterminal']/class[@name='LocationHandler_Factory']" />
     <remove-node path="/api/package[@name='com.stripe.stripeterminal']/class[@name='TerminalSession_Factory']" />
     <remove-node path="/api/package[@name='com.stripe.stripeterminal']/class[@name='TerminalStatusManager_Factory']" />
-    <remove-node path="/api/package[@name='com.stripe.stripeterminal']/class[@name='Terminal_Factory']" />
+    <remove-node path="/api/package[@name='com.stripe.stripeterminal']/class[@name='Terminal_Factory']" />-->
 
-    <attr path="/api/package[@name='com.stripe.stripeterminal']/class[@name='Terminal']" name="managedName">StripeTerminal</attr> -->
+    <!--<attr path="/api/package[@name='com.stripe.stripeterminal']/class[@name='Terminal']" name="managedName">StripeTerminal</attr>--> 
 
 
 </metadata>

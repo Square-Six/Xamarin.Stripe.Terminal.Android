@@ -1,0 +1,29 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+    <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
+    <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.ReaderOperation']/method[@name='execute' and count(parameter)=0]" />
+
+
+    <!-- Handle Covariance issues -->
+    <attr
+      path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">
+        Java.Lang.Object
+    </attr>
+
+    <attr
+      path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">
+        Com.Stripe.Core.Aidlrpc.IAidlMethods
+    </attr>
+
+    <attr
+  path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">
+        Com.Stripe.Core.Aidlrpc.IAidlServices
+    </attr>
+</metadata>
