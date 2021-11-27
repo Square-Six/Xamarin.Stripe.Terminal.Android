@@ -56,9 +56,50 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Naxam.Jakewharton.Timber">
+      <Version>4.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Square.OkHttp3">
+      <Version>4.8.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx">
+      <Version>2.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process">
+      <Version>2.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Room.Runtime">
+      <Version>2.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Dagger">
+      <Version>2.39.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Guava">
+      <Version>28.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.5.31</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8">
+      <Version>1.5.31</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceNames\DeviceNames.csproj">
+      <Project>{c49f87e3-b369-4b9d-819c-fffc2b29038a}</Project>
+      <Name>DeviceNames</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StripeTerminal.External\StripeTerminal.External.csproj">
       <Project>{3ec6b947-3d28-49bc-91e3-60f5fd672eec}</Project>
       <Name>StripeTerminal.External</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\StripeTerminal.Internal.Common\StripeTerminal.Internal.Common.csproj">
+      <Project>{60d00634-e80f-4ffb-a089-85e6efcc9330}</Project>
+      <Name>StripeTerminal.Internal.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj">
       <Project>{cb87261d-5e6c-4487-baa3-b3234580470e}</Project>
@@ -66,9 +107,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Google.Dagger">
-      <Version>2.39.1</Version>
-    </PackageReference>
+    <EmbeddedJar Include="Jars\nv-i18n-1.27.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\wire-runtime-4.0.0-alpha.11.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\wire-moshi-adapter-4.0.0-alpha.11.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

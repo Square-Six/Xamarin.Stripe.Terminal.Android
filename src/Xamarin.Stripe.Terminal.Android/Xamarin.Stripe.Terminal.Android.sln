@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31313.79
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Stripe.Terminal.Android", "Xamarin.Stripe.Terminal.Android\Xamarin.Stripe.Terminal.Android.csproj", "{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}"
 EndProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.External", "StripeTerminal.External\StripeTerminal.External.csproj", "{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Common", "StripeTerminal.Internal.Common\StripeTerminal.Internal.Common.csproj", "{60D00634-E80F-4FFB-A089-85E6EFCC9330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Rootbeer", "Xamarin.Rootbeer\Xamarin.Rootbeer.csproj", "{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,11 +7,15 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
+	<remove-node path="/api/package[starts-with(@name, 'kotlin')]" />
+	
+	
     <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
     <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.ReaderOperation']/method[@name='execute' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']" />
+	
 
-
-    <!-- Handle Covariance issues -->
+	<!-- Handle Covariance issues -->
     <attr
       path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">
         Java.Lang.Object
@@ -23,7 +27,28 @@
     </attr>
 
     <attr
-  path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">
+        path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">
         Com.Stripe.Core.Aidlrpc.IAidlServices
     </attr>
+
+
+	<!--<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='add' and count(parameter)=1]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='add' and count(parameter)=2]/parameter[2]" name="managedType">Java.Lang.Object</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='addAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='addAll' and count(parameter)=2]/parameter[2]" name="managedType">System.Collections.ICollection</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='containsAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='removeAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='retainAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
+	
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='subList']" name="managedReturn">System.Collections.IList</attr>-->
+
+	
+
+
 </metadata>

@@ -7,6 +7,9 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
+    <!-- Change the Parameter Type -->
+    <attr path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.external')]/*/method[@name='toJson']/parameter[2]" name="managedType">Java.Lang.Object</attr>
+
     <!-- Handle Covariance issues -->
     <attr
       path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.external')]/*/method[@name='newArray']" name="managedReturn"> Java.Lang.Object[]

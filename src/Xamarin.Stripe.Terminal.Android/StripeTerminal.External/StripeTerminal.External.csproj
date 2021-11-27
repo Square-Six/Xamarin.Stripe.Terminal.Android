@@ -59,7 +59,25 @@
     <ProjectReference Include="..\StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj">
       <Project>{cb87261d-5e6c-4487-baa3-b3234580470e}</Project>
       <Name>StripeTerminal.Internal.Models</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime">
+      <Version>1.5.20.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Guava">
+      <Version>28.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.JavaX.Inject">
+      <Version>1.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8">
+      <Version>1.5.31</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
