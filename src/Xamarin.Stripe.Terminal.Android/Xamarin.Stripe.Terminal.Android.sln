@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Rootbeer", "Xamarin.Rootbeer\Xamarin.Rootbeer.csproj", "{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Wire", "Xamarin.SquareUp.Wire\Xamarin.SquareUp.Wire.csproj", "{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

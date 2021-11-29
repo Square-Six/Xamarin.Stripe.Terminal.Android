@@ -43,6 +43,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnyMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,12 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedJar Include="Jars\nv-i18n-1.27.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\wire-runtime-4.0.0-alpha.11.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\wire-moshi-adapter-4.0.0-alpha.11.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
