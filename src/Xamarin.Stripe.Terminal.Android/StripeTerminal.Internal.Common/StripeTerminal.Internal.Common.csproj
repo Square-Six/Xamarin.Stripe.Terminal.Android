@@ -43,7 +43,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NullOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdatePackage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
@@ -61,6 +63,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Google.Guava">
       <Version>28.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.5.31</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8">
       <Version>1.5.31</Version>

@@ -1,27 +1,9 @@
 ﻿<metadata>
-    <!--
-      This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-      <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-      This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-      <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-    -->
-
-    <!--<remove-node path="/api/package[starts-with(@name, 'com.google')]" />-->
-    <!--<remove-node path="/api/package[starts-with(@name, 'kotlin')]" />
-    <remove-node path="/api/package[starts-with(@name, 'org.jetbrains')]" />-->
     <remove-node path="/api/package[starts-with(@name, 'dagger')]" />
     <remove-node path="/api/package[@name='com.squareup.wire']/class[@name='ProtoAdapter.Companion.UnsupportedTypeProtoAdapter']" />
 	
-	<attr
-        path="/api/package[@name='com.stripe.stripeterminal.dagger']/class[@name='DaggerTerminalComponent.Builder']/method[@name='build' and count(parameter)=0]" name="managedReturn">
-        Java.Lang.Object
-    </attr>
-
-    <attr
-        path="/api/package[starts-with(@name, 'com.stripe')]/class[@name='RootAccessModule_ProvideRootAccessDetectorFactory']/method[@name='provideRootAccessDetector']" name="managedReturn">
-        Java.Lang.Object
-    </attr>
+	<attr path="/api/package[@name='com.stripe.stripeterminal.dagger']/class[@name='DaggerTerminalComponent.Builder']/method[@name='build' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/class[@name='RootAccessModule_ProvideRootAccessDetectorFactory']/method[@name='provideRootAccessDetector']" name="managedReturn">Java.Lang.Object</attr>
 
     <attr
         path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">

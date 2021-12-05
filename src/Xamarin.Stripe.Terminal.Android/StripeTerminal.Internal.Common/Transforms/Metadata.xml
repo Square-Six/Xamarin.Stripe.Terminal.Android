@@ -1,54 +1,31 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+	<!-- Overrides in Partial Class -->
+	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
 
-	<remove-node path="/api/package[starts-with(@name, 'kotlin')]" />
-	
-	
-    <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
-    <remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.ReaderOperation']/method[@name='execute' and count(parameter)=0]" />
-	<remove-node path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']" />
-	
+	<!-- Removed in Favor of Method over Property (Fixes Class Conflict) -->
+	<remove-node path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='getSize' and count(parameter)=0]" />
 
 	<!-- Handle Covariance issues -->
-    <attr
-      path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">
-        Java.Lang.Object
-    </attr>
-
-    <attr
-      path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">
-        Com.Stripe.Core.Aidlrpc.IAidlMethods
-    </attr>
-
-    <attr
-        path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">
-        Com.Stripe.Core.Aidlrpc.IAidlServices
-    </attr>
-
-
-	<!--<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='add' and count(parameter)=1]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='removeAll']" name="managedType">System.Collections.ICollection</attr>
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='retainAll']" name="managedType">System.Collections.ICollection</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='add' and count(parameter)=1]/parameter[1]" name="managedType">Java.Lang.Object</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='add' and count(parameter)=2]/parameter[2]" name="managedType">Java.Lang.Object</attr>
-
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='addAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='addAll' and count(parameter)=2]/parameter[2]" name="managedType">System.Collections.ICollection</attr>
-
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='set' and count(parameter)=2]/parameter[2]" name="managedType">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='set' and count(parameter)=2]" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='containsAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
-
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='removeAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
-
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='retainAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
-	
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='subList' and count(parameter)=2]" name="name">SubListWrap</attr>
 
-	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='subList']" name="managedReturn">System.Collections.IList</attr>-->
+	<!-- Rename Method -->
+	<!--<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='size' and count(parameter)=0]" name="name">WrapSize</attr>-->
 
-	
+	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.ReaderOperation']/method[@name='execute' and count(parameter)=0]" />
 
-
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlMethods</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlServices</attr>
 </metadata>
