@@ -7,13 +7,6 @@
 
 	<!-- Remove NullOperation Class -->
 	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']" />
-
-	<!-- Add Abstract Method to NullOperation -->
-	<!--<add-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']">
-		<method abstract="false" deprecated="not deprecated" final="false" name="Execute" static="false" visibility="public" extends="java.lang.Object">
-			
-		</method>
-	</add-node>-->
 	
 	<!-- Handle Covariance issues -->
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='removeAll']" name="managedType">System.Collections.ICollection</attr>
