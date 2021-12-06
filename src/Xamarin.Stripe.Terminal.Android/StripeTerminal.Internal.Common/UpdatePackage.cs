@@ -11,7 +11,6 @@ namespace Com.Stripe.Readerupdate
         {
             return SubListWrap(fromIndex, toIndex) as System.Collections.IList;
         }
-
-            
+       
     }
 }

@@ -1,10 +1,20 @@
 ﻿<metadata>
-	<!-- Overrides in Partial Class -->
+	<!-- Overridden in Partial Class - Maybe Remove to Killing Entire Class -->
 	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
 
-	<!-- Removed in Favor of Method over Property (Fixes Class Conflict) -->
+	<!-- Removed in Favor of Method over Property (Fixes Class Conflict - See UpdatePackage.cs Partial Class) -->
 	<remove-node path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='getSize' and count(parameter)=0]" />
 
+	<!-- Remove NullOperation Class -->
+	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']" />
+
+	<!-- Add Abstract Method to NullOperation -->
+	<!--<add-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']">
+		<method abstract="false" deprecated="not deprecated" final="false" name="Execute" static="false" visibility="public" extends="java.lang.Object">
+			
+		</method>
+	</add-node>-->
+	
 	<!-- Handle Covariance issues -->
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='removeAll']" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='retainAll']" name="managedType">System.Collections.ICollection</attr>
@@ -20,10 +30,6 @@
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='subList' and count(parameter)=2]" name="name">SubListWrap</attr>
 
-	<!-- Rename Method -->
-	<!--<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='size' and count(parameter)=0]" name="name">WrapSize</attr>-->
-
-	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.ReaderOperation']/method[@name='execute' and count(parameter)=0]" />
 
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlMethods</attr>

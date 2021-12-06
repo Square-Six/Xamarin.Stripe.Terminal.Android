@@ -1,43 +1,10 @@
 ﻿<metadata>
-    <remove-node path="/api/package[starts-with(@name, 'dagger')]" />
-    <remove-node path="/api/package[@name='com.squareup.wire']/class[@name='ProtoAdapter.Companion.UnsupportedTypeProtoAdapter']" />
-	
 	<attr path="/api/package[@name='com.stripe.stripeterminal.dagger']/class[@name='DaggerTerminalComponent.Builder']/method[@name='build' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[starts-with(@name, 'com.stripe')]/class[@name='RootAccessModule_ProvideRootAccessDetectorFactory']/method[@name='provideRootAccessDetector']" name="managedReturn">Java.Lang.Object</attr>
-
-    <attr
-        path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-
-    <attr
-      path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getApiLevelValidator' and count(parameter)=0]" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-
-    <attr
-       path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getLocationValidator' and count(parameter)=0]" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-
-    <attr
-        path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='provideApiLevelValidator' and count(parameter)=2 and parameter[1][@type='java.lang.Object'] and parameter[2][@type='android.content.Context']]" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-
-    <attr
-       path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getRootAccessDetector' and count(parameter)=0]" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-
-    <attr
-       path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='provideLocationServicesValidator' and count(parameter)=2 and parameter[1][@type='java.lang.Object'] and parameter[2][@type='android.content.Context']]" name="managedReturn">
-            Java.Lang.Object
-    </attr>
-	<attr
-	path="/api/package[@name='com.squareup.wire.internal']/class[@name='EnumJsonFormatter']/method[@name='toStringOrNumber' and count(parameter)=1 and parameter[1][@type='E']]" name="managedReturn">
-		Java.Lang.Object
-	</attr>
-
-
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getApiLevelValidator' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getLocationValidator' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='provideApiLevelValidator' and count(parameter)=2 and parameter[1][@type='java.lang.Object'] and parameter[2][@type='android.content.Context']]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='getRootAccessDetector' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='provideLocationServicesValidator' and count(parameter)=2 and parameter[1][@type='java.lang.Object'] and parameter[2][@type='android.content.Context']]" name="managedReturn">Java.Lang.Object</attr>
 </metadata>
