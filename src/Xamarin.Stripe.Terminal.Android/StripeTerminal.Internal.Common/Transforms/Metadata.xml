@@ -7,7 +7,7 @@
 
 	<!-- Remove NullOperation Class -->
 	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']" />
-	
+
 	<!-- Handle Covariance issues -->
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='removeAll']" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='retainAll']" name="managedType">System.Collections.ICollection</attr>
@@ -21,10 +21,25 @@
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='removeAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='retainAll' and count(parameter)=1]/parameter[1]" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
+	<!-- Rename Method -->
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='subList' and count(parameter)=2]" name="name">SubListWrap</attr>
 
 
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlMethods</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='serviceFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlServices</attr>
+
+
+	<attr path="/api/package[starts-with(@name, 'com.stripe.stripeterminal.internal')]/*/method[@name='toJson']/parameter[2]" name="managedType">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='fromJson']" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='newBuilder']" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='build']" name="managedReturn">Java.Lang.Object</attr>
+
+
+
+	<attr path="/api/package[@name='com.stripe.proto.model.sdk']/class[@name='ChargeAmount']/field[@name='charge_amount']" name="name">mChargeAmount</attr>
+	<attr path="/api/package[@name='com.stripe.proto.terminal.terminal.pub.message.config']/class[@name='AidEntries']/field[@name='aid_entries']" name="name">mAidEntries</attr>
+	<attr path="/api/package[@name='com.stripe.proto.terminal.terminal.pub.message.config']/class[@name='AidEntriesList']/field[@name='aid_entries_list']" name="name">mAidEntriesList</attr>
+	<attr path="/api/package[@name='com.stripe.proto.terminal.terminal.pub.message.config']/class[@name='TippingConfigPb.FixedAmounts']/field[@name='fixed_amounts']" name="name">mFixedAmounts</attr>
+	<attr path="/api/package[@name='com.stripe.proto.terminal.terminal.pub.message.config']/class[@name='TippingConfigPb.Percentages']/field[@name='percentages']" name="name">mPercentages</attr>
 </metadata>

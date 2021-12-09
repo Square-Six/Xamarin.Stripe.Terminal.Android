@@ -63,9 +63,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime">
-      <Version>1.5.20.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Annotation">
       <Version>1.2.0.3</Version>
     </PackageReference>

@@ -81,6 +81,9 @@
       <Version>1.5.31</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\kotlin-parcelize-runtime-1.5.31.jar" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

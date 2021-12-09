@@ -2,8 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Stripe.Terminal.Android", "Xamarin.Stripe.Terminal.Android\Xamarin.Stripe.Terminal.Android.csproj", "{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceNames", "DeviceNames\DeviceNames.csproj", "{C49F87E3-B369-4B9D-819C-FFFC2B29038A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Core", "StripeTerminal.Core\StripeTerminal.Core.csproj", "{95608B1B-2DFF-4A44-8815-5106B8026C82}"
@@ -24,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FD5D83D-CC75-413F-8009-E1AD1EB5CF0B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.ActiveCfg = Release|Any CPU
