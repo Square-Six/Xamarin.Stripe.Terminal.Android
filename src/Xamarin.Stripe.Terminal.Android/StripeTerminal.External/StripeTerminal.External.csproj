@@ -61,6 +61,14 @@
       <Name>StripeTerminal.Internal.Models</Name>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Kotlin.Parcelize.Runtime\Xamarin.Kotlin.Parcelize.Runtime.csproj">
+      <Project>{59c4bb74-64d0-4395-822a-869e4dd81a2b}</Project>
+      <Name>Xamarin.Kotlin.Parcelize.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.SquareUp.Moshi\Xamarin.SquareUp.Moshi.csproj">
+      <Project>{538b9901-d9c3-4008-9765-3c31dfe2bca1}</Project>
+      <Name>Xamarin.SquareUp.Moshi</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.Annotation">

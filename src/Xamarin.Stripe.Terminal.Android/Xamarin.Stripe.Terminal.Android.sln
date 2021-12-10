@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Rootbeer", "Xamarin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Wire", "Xamarin.SquareUp.Wire\Xamarin.SquareUp.Wire.csproj", "{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Moshi", "Xamarin.SquareUp.Moshi\Xamarin.SquareUp.Moshi.csproj", "{538B9901-D9C3-4008-9765-3C31DFE2BCA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Kotlin.Parcelize.Runtime", "Xamarin.Kotlin.Parcelize.Runtime\Xamarin.Kotlin.Parcelize.Runtime.csproj", "{59C4BB74-64D0-4395-822A-869E4DD81A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
