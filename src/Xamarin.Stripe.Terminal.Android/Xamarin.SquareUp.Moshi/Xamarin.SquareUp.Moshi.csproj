@@ -53,7 +53,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <None Include="OkHttpClient.Builder" />
+    <Compile Include="OkHttpClient.Builder.cs" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
