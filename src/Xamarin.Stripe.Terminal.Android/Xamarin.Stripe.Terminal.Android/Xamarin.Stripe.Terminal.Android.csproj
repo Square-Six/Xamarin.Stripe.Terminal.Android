@@ -18,6 +18,15 @@
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageId>Xamarin.Stripe.Terminal.Android</PackageId>
+    <PackageVersion>1.0.17.2</PackageVersion>
+    <Authors>Jamie Smith, Chris Oswald, Blake Davidson</Authors>
+    <Copyright>Copyright 2021</Copyright>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <Owners>SquareSix</Owners>
+    <PackageProjectUrl>https://github.com/Square-Six/Xamarin.StripeTerminal</PackageProjectUrl>
+    <Title>Xamarin StripeTerminal Android</Title>
+    <Description>This is the StripeTerminal SDK bindings for Xamarin.Android</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>portable</DebugType>
+    <DebugType></DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
