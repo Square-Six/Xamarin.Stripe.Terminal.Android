@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95608B1B-2DFF-4A44-8815-5106B8026C82}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StripeTerminal.Core</RootNamespace>
+    <AssemblyName>StripeTerminal.Core</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.SquareUp.Wire">
+      <HintPath>..\Xamarin.SquareUp.Wire\bin\Debug\Xamarin.SquareUp.Wire.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+    <LibraryProjectZip Include="Jars\stripeterminal-core-2.5.2.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Naxam.Jakewharton.Timber">
+      <Version>4.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.ReactiveX.RxAndroid">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.ReactiveX.RxJava">
+      <Version>2.2.21</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.ReactiveX.RxKotlin">
+      <Version>2.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx">
+      <Version>2.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process">
+      <Version>2.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Room.Runtime">
+      <Version>2.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Dagger">
+      <Version>2.39.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Guava">
+      <Version>28.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.Reflect">
+      <Version>1.5.31</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.5.31</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8">
+      <Version>1.5.31</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.KotlinX.Coroutines.Rx2">
+      <Version>1.5.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceNames\DeviceNames.csproj">
+      <Project>{c49f87e3-b369-4b9d-819c-fffc2b29038a}</Project>
+      <Name>DeviceNames</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StripeTerminal.External\StripeTerminal.External.csproj">
+      <Project>{3ec6b947-3d28-49bc-91e3-60f5fd672eec}</Project>
+      <Name>StripeTerminal.External</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\StripeTerminal.Internal.Common\StripeTerminal.Internal.Common.csproj">
+      <Project>{60d00634-e80f-4ffb-a089-85e6efcc9330}</Project>
+      <Name>StripeTerminal.Internal.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj">
+      <Project>{cb87261d-5e6c-4487-baa3-b3234580470e}</Project>
+      <Name>StripeTerminal.Internal.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Kotlin.Parcelize.Runtime\Xamarin.Kotlin.Parcelize.Runtime.csproj">
+      <Project>{59c4bb74-64d0-4395-822a-869e4dd81a2b}</Project>
+      <Name>Xamarin.Kotlin.Parcelize.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.SquareUp.Moshi\Xamarin.SquareUp.Moshi.csproj">
+      <Project>{538b9901-d9c3-4008-9765-3c31dfe2bca1}</Project>
+      <Name>Xamarin.SquareUp.Moshi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\nv-i18n-1.27.jar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
