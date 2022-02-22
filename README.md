@@ -47,3 +47,12 @@ pull request][pulls].
 [package-manager-console]: https://docs.microsoft.com/en-us/nuget/tools/package-manager-console
 [pulls]: https://github.com/Square-Six/Xamarin.Stripe.Terminal.Android/pulls
 [stripe]: https://stripe.com
+
+
+NOTE: If you run into any compiler issues with Java exited with Code 1 or DX8, try adding the folliwing nuget package to resolve the issue.
+
+```sh
+<PackageReference Include="Xamarin.Google.Guava.ListenableFuture" ExcludeAssets="build;buildTransitive">
+   <Version>1.0.0.2</Version>
+</PackageReference>
+```
