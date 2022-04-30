@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Com.Stripe.Readerupdate
 {
-    public partial class UpdatePackage
+    public sealed partial class UpdatePackage
     {
 
         public unsafe global::System.Collections.IList SubList(int fromIndex, int toIndex)
@@ -14,3 +14,14 @@ namespace Com.Stripe.Readerupdate
 
     }
 }
+
+//namespace Com.Stripe.Core.Paymentcollection
+//{
+//    public sealed partial class TippingHandler_Factory
+//    {
+//        public unsafe global::Java.Lang.Object Get()
+//        {
+//            return this;
+//        }
+//    }
+//}

@@ -56,15 +56,6 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\wire-moshi-adapter-4.0.0-alpha.11.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\wire-runtime-4.0.0-alpha.11.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\wire-runtime-jvm-4.0.0-alpha.11.jar" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Xamarin.Kotlin.Reflect">
       <Version>1.5.31</Version>
     </PackageReference>
@@ -80,6 +71,19 @@
       <Project>{538b9901-d9c3-4008-9765-3c31dfe2bca1}</Project>
       <Name>Xamarin.SquareUp.Moshi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Xamarin.SquareUp.Okio\Xamarin.SquareUp.Okio.csproj">
+      <Project>{29a9a38c-7f12-4670-a8e9-e88a02819541}</Project>
+      <Name>Xamarin.SquareUp.Okio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\wire-moshi-adapter-4.0.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\wire-runtime-jvm-4.0.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\wire-runtime-4.0.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

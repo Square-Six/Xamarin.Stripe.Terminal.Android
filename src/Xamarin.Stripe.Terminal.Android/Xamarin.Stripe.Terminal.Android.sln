@@ -20,6 +20,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Moshi", "X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Kotlin.Parcelize.Runtime", "Xamarin.Kotlin.Parcelize.Runtime\Xamarin.Kotlin.Parcelize.Runtime.csproj", "{59C4BB74-64D0-4395-822A-869E4DD81A2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Okio", "Xamarin.SquareUp.Okio\Xamarin.SquareUp.Okio.csproj", "{29A9A38C-7F12-4670-A8E9-E88A02819541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.AndroidX.Security.Security-Crypto", "Xamarin.AndroidX.Security.Security-Crypto\Xamarin.AndroidX.Security.Security-Crypto.csproj", "{FC58D30E-9948-4250-AD74-A1D077FBB095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Org.Apache.Commons.Commons-Compress", "Xamarin.Org.Apache.Commons.Commons-Compress\Xamarin.Org.Apache.Commons.Commons-Compress.csproj", "{7F582B6B-E92D-482E-871A-2E72197E6EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Dagger", "Xamarin.Dagger\Xamarin.Dagger.csproj", "{FAB9948A-26D8-4D67-B079-60F630DF2C37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +70,22 @@ Global
 		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

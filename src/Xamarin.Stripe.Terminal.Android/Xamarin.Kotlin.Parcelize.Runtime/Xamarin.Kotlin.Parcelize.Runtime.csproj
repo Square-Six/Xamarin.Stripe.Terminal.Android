@@ -56,14 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Kotlin.StdLib">
-      <Version>1.5.31</Version>
+      <Version>1.6.10</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\kotlin-parcelize-runtime-1.5.31 %282%29.jar" />
+    <EmbeddedJar Include="Jars\kotlin-parcelize-runtime-1.6.10.jar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\kotlin-android-extensions-runtime-1.5.31 %281%29.jar" />
+    <EmbeddedJar Include="Jars\kotlin-android-extensions-runtime-1.6.10.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
