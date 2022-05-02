@@ -1,14 +1,18 @@
 ﻿<metadata>
-	 <!--Overridden in Partial Class - Maybe Remove to Killing Entire Class--> 
+	 <!-- Overridden in Partial Class - Maybe Remove to Killing Entire Class --> 
 	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']/method[@name='execute' and count(parameter)=0]" />
 
-	 <!--Removed in Favor of Method over Property (Fixes Class Conflict - See UpdatePackage.cs Partial Class)--> 
+	 <!-- Removed in Favor of Method over Property (Fixes Class Conflict - See UpdatePackage.cs Partial Class) --> 
 	<remove-node path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='getSize' and count(parameter)=0]" />
 
-	 <!--Remove NullOperation Class--> 
+	<!-- Remove NullOperation Class --> 
 	<remove-node path="/api/package[@name='com.stripe.stripeterminal.internal.common']/class[@name='Adapter.NullOperation']" />
 
-	 <!--Handle Covariance issues--> 
+	<!-- Remove Get Method -->
+	<!--<remove-node path="/api/package[starts-with(@name, 'com.stripe.core.paymentcollection')]/*/method[@name='get']" />-->
+	
+	
+	<!--Handle Covariance issues--> 
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='removeAll']" name="managedType">System.Collections.ICollection</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='retainAll']" name="managedType">System.Collections.ICollection</attr>	
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='set' and count(parameter)=2]/parameter[2]" name="managedType">Java.Lang.Object</attr>
@@ -29,6 +33,8 @@
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[@name='com.stripe.readerupdate']/class[@name='UpdatePackage']/method[@name='subList' and count(parameter)=2]" name="name">SubListWrap</attr>
 
+	<!-- Create to Get-->
+	<!--<attr path="/api/package[starts-with(@name, 'com.stripe.core.paymentcollection')]/*/method[@name='get']" name="name">Get</attr>-->
 
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
 	<attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='methodFromString']" name="managedReturn">Com.Stripe.Core.Aidlrpc.IAidlMethods</attr>
