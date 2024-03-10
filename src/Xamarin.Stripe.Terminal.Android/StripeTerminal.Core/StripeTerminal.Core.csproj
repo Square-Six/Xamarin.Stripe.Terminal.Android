@@ -100,10 +100,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DeviceNames\DeviceNames.csproj">
-      <Project>{c49f87e3-b369-4b9d-819c-fffc2b29038a}</Project>
-      <Name>DeviceNames</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StripeTerminal.External\StripeTerminal.External.csproj">
       <Project>{3ec6b947-3d28-49bc-91e3-60f5fd672eec}</Project>
       <Name>StripeTerminal.External</Name>

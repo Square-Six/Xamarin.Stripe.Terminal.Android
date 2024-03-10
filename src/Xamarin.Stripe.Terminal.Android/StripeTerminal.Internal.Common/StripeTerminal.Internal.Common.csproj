@@ -80,10 +80,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StripeTerminal.External\StripeTerminal.External.csproj">
-      <Project>{3ec6b947-3d28-49bc-91e3-60f5fd672eec}</Project>
-      <Name>StripeTerminal.External</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj">
       <Project>{cb87261d-5e6c-4487-baa3-b3234580470e}</Project>
       <Name>StripeTerminal.Internal.Models</Name>

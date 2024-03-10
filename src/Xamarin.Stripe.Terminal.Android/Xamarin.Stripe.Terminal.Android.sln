@@ -2,31 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceNames", "DeviceNames\DeviceNames.csproj", "{C49F87E3-B369-4B9D-819C-FFFC2B29038A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Core", "StripeTerminal.Core\StripeTerminal.Core.csproj", "{95608B1B-2DFF-4A44-8815-5106B8026C82}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Models", "StripeTerminal.Internal.Models\StripeTerminal.Internal.Models.csproj", "{CB87261D-5E6C-4487-BAA3-B3234580470E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.External", "StripeTerminal.External\StripeTerminal.External.csproj", "{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeTerminal.Internal.Common", "StripeTerminal.Internal.Common\StripeTerminal.Internal.Common.csproj", "{60D00634-E80F-4FFB-A089-85E6EFCC9330}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Rootbeer", "Xamarin.Rootbeer\Xamarin.Rootbeer.csproj", "{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Wire", "Xamarin.SquareUp.Wire\Xamarin.SquareUp.Wire.csproj", "{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Moshi", "Xamarin.SquareUp.Moshi\Xamarin.SquareUp.Moshi.csproj", "{538B9901-D9C3-4008-9765-3C31DFE2BCA1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Kotlin.Parcelize.Runtime", "Xamarin.Kotlin.Parcelize.Runtime\Xamarin.Kotlin.Parcelize.Runtime.csproj", "{59C4BB74-64D0-4395-822A-869E4DD81A2B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.SquareUp.Okio", "Xamarin.SquareUp.Okio\Xamarin.SquareUp.Okio.csproj", "{29A9A38C-7F12-4670-A8E9-E88A02819541}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.AndroidX.Security.Security-Crypto", "Xamarin.AndroidX.Security.Security-Crypto\Xamarin.AndroidX.Security.Security-Crypto.csproj", "{FC58D30E-9948-4250-AD74-A1D077FBB095}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Org.Apache.Commons.Commons-Compress", "Xamarin.Org.Apache.Commons.Commons-Compress\Xamarin.Org.Apache.Commons.Commons-Compress.csproj", "{7F582B6B-E92D-482E-871A-2E72197E6EDA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Dagger", "Xamarin.Dagger\Xamarin.Dagger.csproj", "{FAB9948A-26D8-4D67-B079-60F630DF2C37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareSix.Stripe.Terminal.Android", "SquareSix.Stripe.Terminal.Android\SquareSix.Stripe.Terminal.Android.csproj", "{5814B08A-114A-412B-A075-14C3C91C9DB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,58 +10,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C49F87E3-B369-4B9D-819C-FFFC2B29038A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95608B1B-2DFF-4A44-8815-5106B8026C82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB87261D-5E6C-4487-BAA3-B3234580470E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EC6B947-3D28-49BC-91E3-60F5FD672EEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60D00634-E80F-4FFB-A089-85E6EFCC9330}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F368B6A5-3A12-41DE-A2F5-D3979680D0D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AFA8BF4-ECDA-44B2-BBC3-6B9E8E283F84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{538B9901-D9C3-4008-9765-3C31DFE2BCA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59C4BB74-64D0-4395-822A-869E4DD81A2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29A9A38C-7F12-4670-A8E9-E88A02819541}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC58D30E-9948-4250-AD74-A1D077FBB095}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F582B6B-E92D-482E-871A-2E72197E6EDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAB9948A-26D8-4D67-B079-60F630DF2C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5814B08A-114A-412B-A075-14C3C91C9DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5814B08A-114A-412B-A075-14C3C91C9DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5814B08A-114A-412B-A075-14C3C91C9DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5814B08A-114A-412B-A075-14C3C91C9DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
