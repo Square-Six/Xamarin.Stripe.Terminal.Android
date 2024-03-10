@@ -1,9 +1,0 @@
-﻿<metadata>
-	<remove-node path="/api/package[@name='com.squareup.wire']/class[@name='ProtoAdapter.Companion.UnsupportedTypeProtoAdapter']" />
-	<remove-node path="/api/package[@name='com.squareup.wire']/class[@name='AnyMessage']" />
-	
-	<attr path="/api/package[@name='com.squareup.wire.internal']/class[@name='EnumJsonFormatter']/method[@name='toStringOrNumber' and count(parameter)=1 and parameter[1][@type='E']]" name="managedReturn">Java.Lang.Object</attr>
-
-	<attr path="/api/package[starts-with(@name, 'com')]/*/method[@name='toJson']/parameter[2]" name="managedType">Java.Lang.Object</attr>
-	<attr path="/api/package[starts-with(@name, 'com')]/*/method[@name='fromJson']" name="managedReturn">Java.Lang.Object</attr>
-</metadata>

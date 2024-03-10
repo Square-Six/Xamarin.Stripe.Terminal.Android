@@ -1,15 +1,11 @@
-﻿﻿<metadata>
-    <remove-node path="/api/package[@name='com.stripe.stripeterminal.dagger']"/>
+﻿<metadata>
+    <remove-node path="/api/package[@name='com.stripe.stripeterminal.dagger']" />
 
-    <!--<remove-node path="/api/package[starts-with(@name, 'com.google')]" />-->
-    <!--<remove-node path="/api/package[starts-with(@name, 'kotlin')]" />-->
-    <!--<remove-node path="/api/package[starts-with(@name, 'org.jetbrains')]" />-->
-    <!--<remove-node path="/api/package[starts-with(@name, 'dagger')]" />-->
     <!--<remove-node path="/api/package[starts-with(@name, 'com.e.c')]" />-->
     <!--<remove-node path="/api/package[starts-with(@name, 'com.s.')]" />-->
     <remove-node path="/api/package[starts-with(@name, 'com.mastercard')]" />
-    <!--<remove-node path="/api/package[starts-with(@name, 'com.stripe.cots.aidlservice.build')]" />-->
-    <!--	<remove-node path="/api/package[starts-with(@name, 'com.stripe.cots')]" />-->
+
+    <remove-node path="/api/package[@name='com.stripe.stripeterminal.external.callable']/interface[@name='ReaderReconnectionListener']/method[@name='onReaderReconnectStarted' and count(parameter)=2 and parameter[1][@type='com.stripe.stripeterminal.external.models.Reader'] and parameter[2][@type='com.stripe.stripeterminal.external.callable.Cancelable']]" />
 
     <attr path="/api/package[starts-with(@name, 'com.s.')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
     <attr path="/api/package[starts-with(@name, 'com.stripe')]/*/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
@@ -128,9 +124,9 @@
     <attr path="/api/package[@name='com.s.al']/class[@name='Connect.Connect']" name="managedName">Connect_1</attr>
     <!--<attr path="/api/package[@name='com.s.ag']/class[@name='Connect']/field[@name='Connect']" name="name">Connect_1</attr>-->
 
+    <attr path="/api/package[@name='com.s.an']/class[@name='SDKs']/field[@name='SDKs']" name="managedName">SDKs_1</attr>
+    <attr path="/api/package[@name='com.s.o']/class[@name='SDKs']/field[@name='SDKs']" name="managedName">SDKs_1</attr>
+    <attr path="/api/package[@name='com.stripe.cots.aidlservice']/class[@name='Billing']/field[@name='Billing']" name="managedName">Billing_1</attr>
 
     <attr path="/api/package[starts-with(@name, 'com.s.')]/*/field[@name='Billing']" name="managedName">Billing_2</attr>
-    <!--	<attr path="/api/package[@name='com.s.b']/class[@name='Billing']/field[@name='Billing']" name="name">Dashboard2</attr>
-	<attr path="/api/package[@name='com.s.c']/class[@name='Billing']/field[@name='Billing']" name="name">Dashboard2</attr>-->
-
 </metadata>
