@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net8.0-android</TargetFramework>
-        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <SupportedOSPlatformVersion>26.0</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
@@ -13,8 +13,8 @@
         <Version>3.4.0</Version>
         <StripeVersion>3.4.0</StripeVersion>
         <KtorVersion>2.3.8</KtorVersion>
-        <Authors>Envoc</Authors>
-        <Company>Envoc</Company>
+        <Authors>SquareSix</Authors>
+        <Company>SquareSix</Company>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,7 +44,7 @@
         <PackageReference Include="Xamarin.Android.ReactiveX.RxJava3.RxJava" Version="3.1.8.3" />
         <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.7.1.1" />
         <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.1.4.10" />
-        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.12.0.4"   />
+        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.12.0.4" />
         <PackageReference Include="Xamarin.AndroidX.DataBinding.ViewBinding" Version="8.2.2" />
         <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.6.2" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx" Version="2.7.0.1" />
